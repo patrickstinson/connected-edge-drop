@@ -10,12 +10,14 @@ pip install git+https://github.com/patrickstinson/connected-edge-drop.git
 
 ## Usage
 
-\`\`\`python
+```python
+
 from connected_edge_drop import ConnectedEdgeDrop
 
 edge_drop = ConnectedEdgeDrop(p=0.5)
 edge_index = edge_drop(edge_index)
-\`\`\`
+
+```
 
 ## License
 
