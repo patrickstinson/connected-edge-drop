@@ -2,7 +2,7 @@
 
 A replacement for `torch_geometric`'s `edge_drop` that preserves (strong) graph connectivity. 
 
-Message passing propagates information over nodes in a graph. Edge dropout can be useful to prevent overfitting based on a static or arbitrary set of edges. However, vanilla dropout can lead to a disconnected graph, preventing the flow of information across a graph. connected-edge-drop ensures the graph remains connected. The spanning tree subgraph is sampled via Wilson's algorithm. If the graph is not connected before edge dropout, the method reverts to vanilla edge dropout. Supports undirected, directed, weighted, and unweighted edges.
+Message passing propagates information over nodes in a graph. Edge dropout can be useful to prevent overfitting based on a static or arbitrary set of edges. However, vanilla dropout can lead to a disconnected graph, preventing the flow of information across a graph. connected-edge-drop ensures the graph remains connected. The spanning tree subgraph is sampled via Wilson's algorithm. The method reverts to vanilla edge dropout for disconnected graphs. Supports undirected, directed, weighted, and unweighted edges.
 
 ## Installation
 
